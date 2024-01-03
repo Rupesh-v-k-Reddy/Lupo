@@ -1,11 +1,14 @@
 import './App.css';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h2 className="text-3xl font-bold underline">React Dashboard</h2>
-      </header>
+    <div className="flex" >
+        <Navbar />
+      <main className="ml-20 p-4" >
+      <Home/>
+      </main>
     </div>
   );
 }
